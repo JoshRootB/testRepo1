@@ -1,25 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!----Reference to the main.css style-->
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-        <div class="color">
-    <!----Plain text hello quotes are not needed-->
-    "hello" 
+<html lang="en"></html>
+
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Welcome To My Landing Page</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <!---Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <!--Font Waesome Content Delivery Network-->
+        <script src="https://kit.fontawesome.com/9ce481d372.js" crossorigin="anonymous"></script>
+
+    </head>
+
+
+    <body>
+
+        <!------------------------NAVIGATION BAR----------------------->
+        <nav id="nav">
+            
+            <ul>
+                <!--Keep the spaces after the </i> tag to make space between the icon-->
+                <li><a href="#Home"><i class="fas fa-home"></i>       Home</a></li>
+                <li><a href="#About"><i class="fas fa-book-open"></i>       About</a></li>
+                <li><a href="#Portfolio"><i class="fas fa-user-circle"></i>       Portfolio</a></li>
+                <li><a href="#Contact"><i class="fas fa-id-card"></i>       Contact</a></li>
+            </ul>
+            
+        </nav>
+        <!------------------------NAVIGATION BAR END----------------------->
+
+
+
+        <!------------------------TITLE----------------------->
+        <div class = "titletext">
+            Hi, I'm Josh.
         </div>
-    <!-------This is a image (html 5 logo)-->
-    <img src="styles/images/html5 logo.png" alt="html logo">
 
-    <!-----This is a nested link sending you to www.google.co.uk-->
-    <p>This is a test link <a href="https://www.google.co.uk">google link</a> to test link click it</a></p>
 
-</body>
+        <!------------------------PROFILE PICTURE----------------------->
+        <div class = "imagepos">
+            <!--<span> <img src="images/profile pic example.png" alt="profile pic example"> </span>-original line-->
+            <img class = "imground" src="images/profile pic resized.jpg" alt="profilepic" />
+        </div>
 
-<footer>this is a footer</footer>
+
+
+        <!------------------------SOME BULLSHIT CHANGE BEFORE SUBMIT---------- -source = https://codepen.io/bowersrd/pen/dwXLba------------->
+        <!--<section class="headline">
+            <h1>Responsive Navigation</h1>
+            <h1>Using CSS grid and flexbox to easily build navbars!</h1>
+        </section>
+        --> 
+
+
+        <!------------------------ABOUT TAB----------------------->
+       <div id="About">
+            <div class="subtext"> 
+                <h2>ABOUT</h2>
+                <div class="bodytext">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Nisi scelerisque eu ultrices vitae auctor eu augue. Sem integer vitae justo eget magna fermentum iaculis. Vitae semper quis lectus nulla at volutpat diam ut venenatis. 
+                        Ac tortor vitae purus faucibus ornare suspendisse sed.
+                        A cras semper auctor neque vitae tempus quam pellentesque nec. Mauris nunc congue nisi vitae suscipit tellus mauris. 
+                        Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed turpis tincidunt id aliquet risus feugiat. 
+                        Placerat orci nulla pellentesque dignissim enim sit amet. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. 
+                        Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Tellus orci ac auctor augue mauris. Fringilla est ullamcorper eget nulla facilisi. 
+                        Id ornare arcu odio ut. Hendrerit gravida rutrum quisque non tellus orci.
+                    </p>
+                
+            </div> 
+       </div>
+
+
+       <!------------------------PORTFOLIO TAB----------------------->
+       <div id="Portfolio">
+            <div class="subtext"> 
+                <h2>PORTFOLIO</h2>
+                <div class="bodytext">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Nisi scelerisque eu ultrices vitae auctor eu augue. Sem integer vitae justo eget magna fermentum iaculis. Vitae semper quis lectus nulla at volutpat diam ut venenatis. 
+                        Ac tortor vitae purus faucibus ornare suspendisse sed.
+                        A cras semper auctor neque vitae tempus quam pellentesque nec. Mauris nunc congue nisi vitae suscipit tellus mauris. 
+                        Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed turpis tincidunt id aliquet risus feugiat. 
+                        Placerat orci nulla pellentesque dignissim enim sit amet. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. 
+                        Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Tellus orci ac auctor augue mauris. Fringilla est ullamcorper eget nulla facilisi. 
+                        Id ornare arcu odio ut. Hendrerit gravida rutrum quisque non tellus orci.
+                    </p>
+            </div> 
+       </div>
+
+
+       <!------------------------CONTACT TAB----------------------->
+       <div id="Contact">
+            <div class="subtext"> 
+                <h2>CONTACT</h2>
+                <div class="bodytext">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Nisi scelerisque eu ultrices vitae auctor eu augue. Sem integer vitae justo eget magna fermentum iaculis. Vitae semper quis lectus nulla at volutpat diam ut venenatis. 
+                        Ac tortor vitae purus faucibus ornare suspendisse sed.
+                        A cras semper auctor neque vitae tempus quam pellentesque nec. Mauris nunc congue nisi vitae suscipit tellus mauris. 
+                        Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed turpis tincidunt id aliquet risus feugiat. 
+                        Placerat orci nulla pellentesque dignissim enim sit amet. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. 
+                        Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Tellus orci ac auctor augue mauris. Fringilla est ullamcorper eget nulla facilisi. 
+                        Id ornare arcu odio ut. Hendrerit gravida rutrum quisque non tellus orci.
+                    </p>
+            </div> 
+       </div>
+
+
+       <!------------------------Grid Layouts--- - source - get source from nile / liz codepen before this is submitted-------------------->
+       <main>
+            <!------------------------EMAIL CARD----------------------->
+            <section id="section-c">
+                <div class="cards">
+                    <div class = "cardtitle">
+                        <header class="header-cards"><h3>Email</h3></header>
+                        <!--Font Awesome Linkedin Icon-->
+                        <div class ="iconpos">
+                        <i class="far fa-envelope"></i>
+                        </div>
+                    </div>
+
+                    <img src="https://edge.alluremedia.com.au/m/g/2018/04/gmail.png" alt="">
+                
+                <div class="cardemail">
+                    <p><a href="https://mail.google.com" target="_blank">Send Me An Email</a></p>
+                </div>
+
+              </div>
+              
+              <!------------------------GITHUB CARD----------------------->
+                <div class="cards">
+                  <div class = "cardtitle">
+                    <header class="header-cards"><h3>GitHub</h3></header>
+                    <!--Font Awesome Github Icon-->
+                    <div class = "iconpos">
+                    <i class="fab fa-github"></i>
+                    </div>
+                </div>
+
+                <img src="https://i.ytimg.com/vi/OEGm7LXAN_c/maxresdefault.jpg" alt="">
+
+                <div class="cardgithub">
+                    <p><a href="https://www.github.com/" target="_blank">View My Github</a></p>
+                </div>
+                
+              </div>
+
+              <!------------------------LINKEDIN CARD----------------------->
+                <div class="cards">
+                    <div class = "cardtitle">
+                        <header class="header-cards"><h3>Linkedin</h3></header>
+                        <!--Font Awesome Linkedin Icon-->
+                        <div class ="iconpos">
+                        <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <img src="https://www.at-languagesolutions.com/en/wp-content/uploads/2019/06/linkedin.jpg" alt="">
+
+                    <div class = "cardlinkedin">
+                        <p><a href="https://www.linkedin.com/" target="_blank">View My Linkedin</a></p>
+                </div>
+                    
+              </div>
+            </section>
+          </main>
+        <!------------------------Grid Layouts END--- - source - get source from nile / liz codepen before this is submitted-------------------->
+
+          <!------------------------REMOVE THIS DIV + COMMENT ONLY HERE TO REMIND YOU OF WHAT TO DO NEXT.-->
+        <div class="titletext">
+
+            <h1>You need to add the small grid boxes here with the small logos of github, email, and linkedin</h1>
+
+        </div>
+
+        <div class="columntext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare suspendisse sed. Tempor orci dapibus ultrices in iaculis nunc sed. Tincidunt dui ut ornare lectus. Lobortis mattis aliquam faucibus purus. Dignissim enim sit amet venenatis urna. Maecenas ultricies mi eget mauris pharetra et. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Morbi tristique senectus et netus et malesuada. Tristique et egestas quis ipsum suspendisse. Neque viverra justo nec ultrices. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Auctor neque vitae tempus quam. Bibendum ut tristique et egestas.
+
+
+
+
+        </div>
+
+       
+    </body>
+
+
+    <footer>
+
+        <!------------------------BACK TO TOP----------------------->
+        <div class = "backtop">
+            <a href="#nav">
+                <p>
+                    Go Back To The Top
+                </p>
+            </a>
+        </div>
+
+    </footer>
+
 </html>
