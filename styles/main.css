@@ -5,10 +5,15 @@ body {
     background-size: cover;
   }
 
-/* Override the clicked purple colour */
+/* Override the clicked purple colour to white*/
 a:visited { 
     text-decoration: none; color:white; 
 }
+/* Override the blue colour of the link text to white */
+a:link{
+  text-decoration: none; color:white; 
+}
+
 
 
 /* Title Text */
@@ -20,7 +25,6 @@ a:visited {
     text-shadow: white;
     padding: 40px;
     font: 30px/1 Comfortaa;
-    backdrop-filter: blur(13px);
     position: relative;
 }
 
@@ -32,32 +36,10 @@ a:visited {
     text-shadow: white;
     padding: 40px;
     font: 35px/1 Comfortaa;
-    /*backdrop-filter: blur(13px);*/
     position: relative;
 }
 
-/* Body Text Original (backup lines) */
-/*
-.bodytext{
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: white;
-    padding: 40px;
-    font: 20px/1 Comfortaa;
-    /*backdrop-filter: blur(13px);*//*
-    position: relative;
-    background-color: #33333338;
-    border: 2px solid #f1f1f1cf;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1544411047-c491e34a24e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    box-shadow: black;
-    border-radius: 0.6rem;
-    
-}
-/*
-
-
- /* Body Text */
+ /* Body Text + Border*/
 .bodytext{
     color: white;
     text-align: center;
@@ -71,7 +53,6 @@ a:visited {
     border: 2px solid #f1f1f1cf;
     box-shadow: black;
     border-radius: 0.6rem;
-    
 }
 
 
@@ -81,33 +62,17 @@ html {
   }
 
 
-/*Navigation Bar Font*/
-.navfont{
-    font: 30px/1 Comfortaa;
-}
-
-
-/*Image Position*/
+/* Image Position - Center the image*/
 .imagepos{
   text-align: center;
-
 }
 
 
-/* Make the profile image round */
+/* Make the profile image round and added blur border */
 .imground{
   border-radius: 50%;
   border: 10px solid rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(9px);
-}
-
-
-
-
-/* Logo Image*/
-.loimg{
-    width: 25%;
-    height: 25%;
 }
 
 /*Back to the top*/
@@ -118,98 +83,47 @@ html {
     font: 35px/1 Comfortaa;
     background-color: #ffffff7a;
     padding: 15px;
-    backdrop-filter: blur(13px);
     background: #ffffff61;
     border-radius: 0.6rem;
     border: 1px solid #f1f1f1;
-    background: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1488388373205-a134c1cc7e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1383&q=80') no-repeat center center fixed;
     background-size: cover;
 }
 
 
 /* Navigation Bar */
-#nav{
-  margin-left: 16%;
 
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    backdrop-filter: blur(13px);
-    /*
-    border: 3px solid grey;
-    border-right: 1px solid;
-    background-color: #33333338;
-    */
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
+  ul{
+    list-style: none;
+    backdrop-filter: blur(3px);
     text-align: center;
-    /*padding: 14px 16px; original lines kept for value reference*/
-    padding: 14px 30px;
-    text-decoration: none;
-    font: 30px/1 Comfortaa;
-    transition: all 0.5s ease;
+    padding: 15px 0px;
+    margin: 0%;
   }
   
+  /* Making the list display horizontally not verticly and changing the font.*/
+  li{
+    display: inline-block;
+    font: 30px/1 Comfortaa;
+  }
+
+  /* Creating space between each navigation text */
+  a{
+    width: 2px;
+    padding: 50px;
+  }
+
+  /* Hover Effect */
   li a:hover {
     color: rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ;
   }
 
+/* Navigation Bar END */
 
 
 
-  h1{
-      text-align: center;
-      font: 20px/1 Comfortaa;
-      color: whitesmoke;
-      text-emphasis: bold;
-  }
-
-
-  /* Source = https://codepen.io/bowersrd/pen/dwXLba */
-  .headline {
-    width: 100%;
-    height: 50vh;
-    min-height: 350px;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1487284122274-e864e9dec2bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-
-
-
-/* Grid Layout */
-.gridlayout{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
-    align-items: center;
-}
-
-.gridone{
-    grid-column: 1 / 3;
-    grid-row: 1;
-}
-
-
-
-
-
-
-/* Grid Layouts--- - source - get source from nile / liz codepen before this is submitted */
+/* Grid Layouts--- - source - https://codepen.io/lizcoultersmith/pen/qBBxzra - i have modified the code since getting it from the source */
 
 /* Main */
 main {
@@ -249,7 +163,7 @@ main {
   
   .header-cards{
     justify-content: center;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
   }
   
   .cards > img:hover {
@@ -276,6 +190,7 @@ main {
     color: black;
   }
 
+  /* i added this */
   .cardemail{
     color: white;
     text-align: center;
@@ -292,6 +207,7 @@ main {
     border-radius: 0.6rem;
   }
 
+  /* i added this */
   .cardgithub{
     color: white;
     text-align: center;
@@ -308,7 +224,7 @@ main {
     border-radius: 0.6rem;
   }
 
-
+  /* i added this */
   .cardlinkedin{
     color: white;
     text-align: center;
@@ -324,18 +240,10 @@ main {
     box-shadow: black;
     border-radius: 0.6rem;
   }
-
-.fonttest{
-  font-family: 'Leckerli One', cursive;
-  font: 40px/1 Leckerli One;
-}
-
-.submar{
-  margin: 15px;
-}
-  /* Grid Layouts--- - source - get source from nile / liz codepen before this is submitted */
+  /* Grid Layouts END*/
 
 
+  /*This is to make the profile picture round */
 .roundimg{
   border-radius: 50%;
 }
@@ -345,22 +253,17 @@ main {
   position:relative; top:-15px;
  }
 
-
+/* For the title of my "cards" */
  h2{
   color: white;
   text-align: center;
   font-weight: bold;
   text-shadow: white;
   font: 35px/1 Comfortaa;
+  letter-spacing: 6px;
   position: relative;
   position:relative; top:-1px;
   text-decoration: underline;
  }
 
- .columtext{
-  column-count: 3;
-  background-color: #00000069;
-  border: 2px solid #f1f1f1cf;
-  box-shadow: black;
-  border-radius: 0.6rem;
- }
+ 
